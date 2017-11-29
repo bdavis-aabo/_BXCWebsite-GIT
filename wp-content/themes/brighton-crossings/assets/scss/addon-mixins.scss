@@ -1,0 +1,67 @@
+/* Mixins */
+@mixin mix-transition($property, $duration, $timing-function, $delay: false) {
+	@if $delay{
+	-webkit-transition: $property $duration $timing-function $delay;
+	   -moz-transition: $property $duration $timing-function $delay;
+	     -o-transition: $property $duration $timing-function $delay;
+	        transition: $property $duration $timing-function $delay;
+	} @else {
+	-webkit-transition: $property $duration $timing-function;
+	   -moz-transition: $property $duration $timing-function;
+	     -o-transition: $property $duration $timing-function;
+	        transition: $property $duration $timing-function;	
+	}
+}
+
+@mixin border-radius($radius) {
+	-webkit-border-radius: $radius;
+	   -moz-border-radius: $radius;
+	     -o-border-radius: $radius;
+	        border-radius: $radius;
+}
+
+@mixin border-mixed-radius($top, $right, $bottom, $left) {
+	-webkit-border-radius: $top $right $bottom $left;
+	   -moz-border-radius: $top $right $bottom $left;
+	     -o-border-radius: $top $right $bottom $left;
+	        border-radius: $top $right $bottom $left;	
+}
+
+@mixin box-shadow($x, $y, $blur, $color, $inset: false){
+	@if $inset{
+	-webkit-box-shadow: inset $x $y $blur $color;
+	   -moz-box-shadow: inset $x $y $blur $color;
+	     -o-box-shadow: inset $x $y $blur $color;
+	        box-shadow: inset $x $y $blur $color;		
+	} @else {
+	-webkit-box-shadow: $x $y $blur $color;
+	   -moz-box-shadow: $x $y $blur $color;
+	     -o-box-shadow: $x $y $blur $color;
+	        box-shadow: $x $y $blur $color;
+	}	
+}
+
+@mixin box-shadow-none(){
+	-webkit-box-shadow: none;
+	   -moz-box-shadow: none;
+	     -o-box-shadow: none;
+	        box-shadow: none;
+}
+
+@mixin text-shadow($x, $y, $blur, $color){
+	-webkit-text-shadow: $x $y $blur $color;
+	   -moz-text-shadow: $x $y $blur $color;
+	     -o-text-shadow: $x $y $blur $color;
+	        text-shadow: $x $y $blur $color;	
+}
+
+@mixin text-shadow-none(){
+	-webkit-text-shadow: none;
+	   -moz-text-shadow: none;
+	     -o-text-shadow: none;
+	        text-shadow: none;	
+}
+
+@mixin headings {
+	h1,h2,h3,h4,h5,h6 { @content; }
+}
