@@ -140,7 +140,7 @@ footer { background: $darkgray; }
 		a  { color: $yellow; text-decoration: underline;
 			&:hover { text-decoration: none; }
 		}
-		.community-panel { 
+		.community-panel { width: 80%; 
 			.panel-group { border: 1px solid $ltgray; @include box-shadow(0,0,8px,rgba(0,0,0,0.3)); background: $white; 
 				.panel { border-radius: 0; box-shadow: none; border: none; border-bottom: 1px solid $ltgray; margin-top: 0; 
 					.panel-heading { background: $white; padding: 15px;

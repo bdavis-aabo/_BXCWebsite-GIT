@@ -555,52 +555,54 @@ footer {
       text-decoration: underline; }
       .community-amenities .community-information a:hover {
         text-decoration: none; }
-    .community-amenities .community-information .community-panel .panel-group {
-      border: 1px solid #ececec;
-      -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
-      -o-box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
-      box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
-      background: #ffffff; }
-      .community-amenities .community-information .community-panel .panel-group .panel {
-        border-radius: 0;
-        -webkit-box-shadow: none;
-                box-shadow: none;
-        border: none;
-        border-bottom: 1px solid #ececec;
-        margin-top: 0; }
-        .community-amenities .community-information .community-panel .panel-group .panel .panel-heading {
-          background: #ffffff;
-          padding: 15px; }
-          .community-amenities .community-information .community-panel .panel-group .panel .panel-heading .panel-title {
-            font-size: 1.3em;
-            padding-left: 24px; }
-            .community-amenities .community-information .community-panel .panel-group .panel .panel-heading .panel-title a {
-              text-decoration: none;
-              display: block;
-              background: transparent url("../images/minus.jpg") no-repeat right 3px; }
-              .community-amenities .community-information .community-panel .panel-group .panel .panel-heading .panel-title a.collapsed {
-                color: #4b4b4b;
-                background: transparent url("../images/plus.jpg") no-repeat right 3px; }
-                .community-amenities .community-information .community-panel .panel-group .panel .panel-heading .panel-title a.collapsed:hover {
-                  color: #feba12; }
-        .community-amenities .community-information .community-panel .panel-group .panel.one .panel-heading {
-          background: url("../images/1-icon.jpg") no-repeat 10px 13px; }
-        .community-amenities .community-information .community-panel .panel-group .panel.two .panel-heading {
-          background: url("../images/2-icon.jpg") no-repeat 10px 13px; }
-        .community-amenities .community-information .community-panel .panel-group .panel.three .panel-heading {
-          background: url("../images/3-icon.jpg") no-repeat 10px 13px; }
-        .community-amenities .community-information .community-panel .panel-group .panel.four .panel-heading {
-          background: url("../images/4-icon.jpg") no-repeat 10px 13px; }
-        .community-amenities .community-information .community-panel .panel-group .panel.five .panel-heading {
-          background: url("../images/5-icon.jpg") no-repeat 10px 13px; }
-        .community-amenities .community-information .community-panel .panel-group .panel.six .panel-heading {
-          background: url("../images/6-icon.jpg") no-repeat 10px 13px; }
-        .community-amenities .community-information .community-panel .panel-group .panel.school .panel-heading {
-          background: url("../images/school-icon.jpg") no-repeat 10px 13px; }
-        .community-amenities .community-information .community-panel .panel-group .panel.homes .panel-heading {
-          background: url("../images/home-icon.jpg") no-repeat 10px 13px; }
-        .community-amenities .community-information .community-panel .panel-group .panel:last-child {
-          border-bottom: none; }
+    .community-amenities .community-information .community-panel {
+      width: 80%; }
+      .community-amenities .community-information .community-panel .panel-group {
+        border: 1px solid #ececec;
+        -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+        -o-box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+        background: #ffffff; }
+        .community-amenities .community-information .community-panel .panel-group .panel {
+          border-radius: 0;
+          -webkit-box-shadow: none;
+                  box-shadow: none;
+          border: none;
+          border-bottom: 1px solid #ececec;
+          margin-top: 0; }
+          .community-amenities .community-information .community-panel .panel-group .panel .panel-heading {
+            background: #ffffff;
+            padding: 15px; }
+            .community-amenities .community-information .community-panel .panel-group .panel .panel-heading .panel-title {
+              font-size: 1.3em;
+              padding-left: 24px; }
+              .community-amenities .community-information .community-panel .panel-group .panel .panel-heading .panel-title a {
+                text-decoration: none;
+                display: block;
+                background: transparent url("../images/minus.jpg") no-repeat right 3px; }
+                .community-amenities .community-information .community-panel .panel-group .panel .panel-heading .panel-title a.collapsed {
+                  color: #4b4b4b;
+                  background: transparent url("../images/plus.jpg") no-repeat right 3px; }
+                  .community-amenities .community-information .community-panel .panel-group .panel .panel-heading .panel-title a.collapsed:hover {
+                    color: #feba12; }
+          .community-amenities .community-information .community-panel .panel-group .panel.one .panel-heading {
+            background: url("../images/1-icon.jpg") no-repeat 10px 13px; }
+          .community-amenities .community-information .community-panel .panel-group .panel.two .panel-heading {
+            background: url("../images/2-icon.jpg") no-repeat 10px 13px; }
+          .community-amenities .community-information .community-panel .panel-group .panel.three .panel-heading {
+            background: url("../images/3-icon.jpg") no-repeat 10px 13px; }
+          .community-amenities .community-information .community-panel .panel-group .panel.four .panel-heading {
+            background: url("../images/4-icon.jpg") no-repeat 10px 13px; }
+          .community-amenities .community-information .community-panel .panel-group .panel.five .panel-heading {
+            background: url("../images/5-icon.jpg") no-repeat 10px 13px; }
+          .community-amenities .community-information .community-panel .panel-group .panel.six .panel-heading {
+            background: url("../images/6-icon.jpg") no-repeat 10px 13px; }
+          .community-amenities .community-information .community-panel .panel-group .panel.school .panel-heading {
+            background: url("../images/school-icon.jpg") no-repeat 10px 13px; }
+          .community-amenities .community-information .community-panel .panel-group .panel.homes .panel-heading {
+            background: url("../images/home-icon.jpg") no-repeat 10px 13px; }
+          .community-amenities .community-information .community-panel .panel-group .panel:last-child {
+            border-bottom: none; }
   .community-amenities .community-mapbtn {
     width: 43%;
     float: right;
