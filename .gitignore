@@ -12,6 +12,10 @@ wp-content/wp-cache-config.php
 wp-content/plugins/hello.php
 wp-content/themes/brighton-crossings-v1.5/assets/scss/.sass-cache/
 #wp-content/themes/brighton-crossings-v1.5/assets/video/
+wp-content/themes/twentyfourteen
+wp-content/themes/twentyfifteen
+wp-content/themes/twentysixteen
+
 
 /.htaccess
 /license.txt
