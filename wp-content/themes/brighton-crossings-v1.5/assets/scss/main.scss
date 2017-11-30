@@ -114,7 +114,9 @@ footer { background: $darkgray; }
 .enjoy-callout { margin: 45px 0; }
 
 .subpage-content { font-size: 14px; line-height: 1.6em;
-	.secondary-headline { color: $yellow; margin-bottom: 15px; }
+	.secondary-headline { color: $yellow; margin-bottom: 15px; 
+		&.green-text { color: $ltgreen; }
+	}
 	p { margin-bottom: 15px; }
 	ul { font-size: 14px; 
 		li { padding: 5px 0 3px; }
@@ -123,6 +125,70 @@ footer { background: $darkgray; }
 }
 
 .slant-down .welcome-headline { margin-top: 130px; }
+
+/*** COMMUNITY SECTION ***/
+.community-section { padding-top: 50px; 
+	.community-content {
+		h2 { margin-bottom: 25px; }
+		h3 { margin-top: 20px; padding-right: 15%; line-height: 1.53em; color: $ltgreen; }
+	}
+}
+.community-amenities { background: transparent url('../images/community_map-bg.jpg') no-repeat center 75px; /* background-size: contain; */ float: left; width: 100%; min-height: 620px; 
+	padding-top: 45px; padding-bottom: 45px; margin-bottom: 30px; border-bottom: 2px solid $ltgray;
+	.community-information { width: 56%; float: left;
+		h2 { color: $yellow; }
+		a  { color: $yellow; text-decoration: underline;
+			&:hover { text-decoration: none; }
+		}
+		.community-panel { 
+			.panel-group { border: 1px solid $ltgray; @include box-shadow(0,0,8px,rgba(0,0,0,0.3)); background: $white; 
+				.panel { border-radius: 0; box-shadow: none; border: none; border-bottom: 1px solid $ltgray; margin-top: 0; 
+					.panel-heading { background: $white; padding: 15px;
+						.panel-title { font-size: 1.3em; padding-left: 24px;
+							a { text-decoration: none; display: block; background: transparent url('../images/minus.jpg') no-repeat right 3px;
+								&.collapsed { color: $medgray; background: transparent url('../images/plus.jpg') no-repeat right 3px; 
+									&:hover { color: $yellow; }
+								}
+							}
+						}
+					}
+					&.one {
+						.panel-heading { background: url('../images/1-icon.jpg') no-repeat 10px 13px; }
+					}
+					&.two {
+						.panel-heading { background: url('../images/2-icon.jpg') no-repeat 10px 13px; }
+					}
+					&.three {
+						.panel-heading { background: url('../images/3-icon.jpg') no-repeat 10px 13px; }
+					}
+					&.four {
+						.panel-heading { background: url('../images/4-icon.jpg') no-repeat 10px 13px; }
+					}
+					&.five {
+						.panel-heading { background: url('../images/5-icon.jpg') no-repeat 10px 13px; }
+					}
+					&.six {
+						.panel-heading { background: url('../images/6-icon.jpg') no-repeat 10px 13px; }
+					}
+					&.school {
+						.panel-heading { background: url('../images/school-icon.jpg') no-repeat 10px 13px; }
+					}
+					&.homes {
+						.panel-heading { background: url('../images/home-icon.jpg') no-repeat 10px 13px; }
+					}
+					&:last-child { border-bottom: none; }
+				}
+			}
+		}
+	}
+	.community-mapbtn { width: 43%; float: right; text-align: center; padding-top: 620px; 
+		.btn { font-family: 'gobold', sans-serif; font-size: 1.1em; font-weight: lighter; }
+	}
+}
+.surrounding-areamap { padding-top: 100px; text-align: center;
+	img.aligncenter { margin-bottom: 20px; }
+	.btn { font-family: 'gobold', sans-serif; font-size: 1.1em; font-weight: lighter; }
+}
 
 /*** HOMES SECTION ***/
 .homes-section:before { content: ''; position: absolute; left: 0; overflow: hidden; width: 100%; z-index: -5; float: left; height: 450px; }
@@ -602,6 +668,20 @@ input#builder { display: none !important; }
 		}
 		.homes-content { margin-top: -50px; }
 	}
+	.page-template-page-community {
+		.hero-image {
+			.hero-caption { top: 25%;
+				h2 { font-size: 5em; }
+			}
+		}
+		.community-section { padding-top: 0; margin-top: -50px; 
+			
+		}
+		.community-amenities {
+			.community-information { width: 60%; }
+			.community-mapbtn { width: 38%; padding-top: 0; }
+		}
+	}
 
 	
 	
@@ -700,6 +780,27 @@ input#builder { display: none !important; }
 		.homes-content { margin-top: 0px; }
 	}
 	
+	/*** COMMUNITY ***/
+	.page-template-page-community {
+		.hero-image {
+			.hero-caption { top: 20%;
+				h2 { font-size: 2.5em; }
+			}
+		}
+		.community-section { padding-top: 0; margin-top: 25px; 
+			
+		}
+		.community-amenities { background: none; 
+			.community-information { width: 100%; 
+				h2 { line-height: 1.4em; }
+			}
+			.community-mapbtn { width: 100%; padding-top: 0; }
+		}
+		.secondary-headline { line-height: 1.4em; }
+		.surrounding-areamap { padding-top: 0; }
+	}
+	
+	
 	/*** CONTACT FORM ***/
 	.contact-form#contact	{ margin: 60px 20px 0; }
 	.contact-form .form-left	{ width: 100%; float: left; margin-right: 1%; }
@@ -746,6 +847,26 @@ input#builder { display: none !important; }
 			}
 		}
 		.homes-content { margin-top: 225px; }
+	}
+	
+	/*** COMMUNITY ***/
+	.page-template-page-community {
+		.hero-image {
+			.hero-caption { top: 20%;
+				h2 { font-size: 2.5em; }
+			}
+		}
+		.community-section { padding-top: 30px; margin-top: 225px; 
+			
+		}
+		.community-amenities { background: none; 
+			.community-information { width: 100%; 
+				h2 { line-height: 1.4em; }
+			}
+			.community-mapbtn { width: 100%; padding-top: 0; }
+		}
+		.secondary-headline { line-height: 1.4em; }
+		.surrounding-areamap { padding-top: 0; }
 	}
 	
 	/*** SOCIALIZE SECTION ***/

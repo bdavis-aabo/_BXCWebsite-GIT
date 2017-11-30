@@ -1,31 +1,55 @@
 <?php /* Template Name: Page - Community */ ?>
 
-<?php get_header() ?>
+<?php
+	global $post;
+	$post_class = get_post($post->ID);
+	
+	$_childPages = new WP_Query();
+	$_args = array(
+		'post_parent'	=>	$post->ID,
+		'post_type'		=>	'page',
+		'post_status'	=>	'publish',
+		'order'			=>	'ASC',
+		'orderby'		=>	'id',
+		'pagename'		=>	'community/community-accordian'
+	);
+	$_childPages->query($_args);
+?>
 
-		<div class="row">
-			<?php if(have_posts()): while(have_posts()): the_post() ?>
-			
-			<?php $_color = str_replace('-bg', '', get_field('page_color')) ?>
-			
-			<section class="<?php echo get_field('page_angle') . ' ' . get_field('page_color') ?> subpage-section">
-				<img src="<?php bloginfo('template_directory') ?>/assets/images/<?php echo $_color ?>-logo.png" class="img-responsive logomark" alt="" />
-				<div class="col-md-8">
-					<div class="subpage-container">
-						<?php the_content() ?>
+<?php get_header() ?>
+	<?php while(have_posts()): the_post(); ?>
+	<div class="row">
+		<section class="community-section">
+			<div class="col-md-12">
+				<div class="community-content"><?php the_content() ?></div>
+			</div>
+			<img src="<?php bloginfo('template_directory') ?>/assets/images/community-bottomimage.jpg" class="img-responsive" alt="" />
+		</section>
+	</div>
+	
+	<div class="row">
+		<section class="community-amenities">
+			<div class="col-md-12">
+				<div class="community-information">
+					<?php echo get_field('page_subcontent') ?>
+					
+					
+					<?php if($_childPages->have_posts()): ?>
+					<div class="community-panel">
+						<?php while($_childPages->have_posts()): $_childPages->the_post(); ?>
+							<?php the_content(); ?>
+						<?php endwhile; ?>
 					</div>
+					<?php else: ?>no children<?php endif; ?>
 				</div>
-				<div class="col-md-4">
-					<div class="subpage-container welcome-headline">
-						<?php echo get_field('page_subcontent') ?>
-					</div>
+				<div class="community-mapbtn">
+					<a href="<?php bloginfo('template_directory') ?>/assets/maps/bxc_community-map.pdf" class="btn yellow-btn" target="_blank">download community map</a>
 				</div>
-			</section>
-			<?php $_subImage = get_field('page_subimage'); ?>
-			<?php if($_subImage): ?><img src="<?php echo $_subImage['url'] ?>" class="img-responsive aligncenter subpage-bottom-image" alt="<?php echo $_subImage['title'] ?>" /><?php endif; ?>
-			
-			<?php endwhile; endif; ?>
-		</div>
-		
+			</div>
+		</section>
+	</div>
+	<?php endwhile; ?>
+	
 		<?php get_template_part('page/page-surrounding') ?>
 		
 		<?php get_template_part('contact/contact-form') ?>

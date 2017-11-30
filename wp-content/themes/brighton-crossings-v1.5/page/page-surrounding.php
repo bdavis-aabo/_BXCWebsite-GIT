@@ -6,9 +6,15 @@
 		<?php if($_enjoyPage->have_posts()): while($_enjoyPage->have_posts()): $_enjoyPage->the_post() ?>
 		<div class="row">	
 			<section class="subpage-content">
-				<div class="col-md-12">
-					<h2 class="secondary-headline"><?php echo get_field('hero_title') ?></h2>
+				<div class="col-md-8">
+					<h2 class="secondary-headline green-text"><?php echo get_field('hero_title') ?></h2>
 					<?php the_content() ?>
+				</div>
+				<div class="col-md-4">
+					<div class="surrounding-areamap">
+						<img src="<?php bloginfo('template_directory') ?>/assets/images/bxc_surroundingarea-map.jpg" alt="" class="img-responsive aligncenter" />
+						<a href="" class="btn green-btn">download surrounding area map</a>
+					</div>
 				</div>
 			</section>
 		</div>

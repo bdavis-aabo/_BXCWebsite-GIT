@@ -44,7 +44,6 @@
 												<?php echo 'Sales office is open daily<br />'. str_replace('<br>', ' | ',get_field('home_hours')) ?><br />
 												<strong class="builder-phone <?php echo $_btnColor . '-text' ?>"><?php echo get_field('home_phone') ?></strong>
 											</p>
-											</h2>
 										</div>
 									</div>
 								</div>
@@ -108,7 +107,5 @@
 								<?php endif; //in_array statement ?>
 									
 								<?php endwhile; wp_reset_query();  ?>
-								
-							<?php //endforeach; // terms as term ?>
 							</div>
 						</section>
