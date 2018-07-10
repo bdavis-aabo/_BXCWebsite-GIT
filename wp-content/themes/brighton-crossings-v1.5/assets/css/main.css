@@ -1624,6 +1624,8 @@ input#builder {
     margin: 10px; }
   .navbar ul li {
     border-bottom-color: #404041; }
+  .navbar ul li.crossings-nav a {
+    background: url("../images/crossings-mobile.png") no-repeat center top; }
   .navbar ul li a,
   .navbar ul li a:focus,
   .navbar ul li a:visited {

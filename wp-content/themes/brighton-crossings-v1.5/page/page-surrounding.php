@@ -13,7 +13,7 @@
 				<div class="col-md-4">
 					<div class="surrounding-areamap">
 						<img src="<?php bloginfo('template_directory') ?>/assets/images/bxc_surroundingarea-map.jpg" alt="" class="img-responsive aligncenter" />
-						<a href="" class="btn green-btn">download surrounding area map</a>
+						<a href="<?php bloginfo('template_directory') ?>/assets/maps/BC-Amenities Map.pdf" class="btn green-btn" target="_blank">download surrounding area map</a>
 					</div>
 				</div>
 			</section>

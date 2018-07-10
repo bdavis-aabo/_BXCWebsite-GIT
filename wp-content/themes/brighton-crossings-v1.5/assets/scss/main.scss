@@ -721,6 +721,7 @@ input#builder { display: none !important; }
 	.navbar-collapse		{ background: $white; width: 100%; }
 	.navbar ul				{ margin: 10px; }
 	.navbar ul li 			{ border-bottom-color: $darkgray; }
+	.navbar ul li.crossings-nav a { background: url('../images/crossings-mobile.png') no-repeat center top; }
 	.navbar ul li a, 
 	.navbar ul li a:focus, 
 	.navbar ul li a:visited	{ color: $darkgray; }

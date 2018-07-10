@@ -1,5 +1,6 @@
 *.log
 wp-config.php
+wp-content/index.php
 wp-content/advanced-cache.php
 wp-content/backup-db/
 wp-content/backups/
@@ -15,6 +16,7 @@ wp-content/themes/brighton-crossings-v1.5/assets/scss/.sass-cache/
 wp-content/themes/twentyfourteen
 wp-content/themes/twentyfifteen
 wp-content/themes/twentysixteen
+wp-content/themes/index.php
 
 
 /.htaccess
@@ -53,3 +55,4 @@ wp-content/themes/twentysixteen
 /wp-trackback.php
 /xmlrpc.php
 
+.ftpconfig
